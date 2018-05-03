@@ -52,9 +52,9 @@ function getItemStat(item) {
 
       var el = item.querySelector('._21Anx7su > div:last-child, ._2AXi12hA, .product-summary');
       el.style.height = "130px";
-      var html = '<span style="color: #555555;font-size: 12px;"><i class="icon-shopping-cart-alt-2 mr-5"></i>Terjual: <strong>' + jsonString.item_sold + '</strong></span>';
+      var html = '<span class="sold-count" style="color: #555555;font-size: 12px;"><i class="icon-shopping-cart-alt-2 mr-5"></i>Terjual: <strong>' + jsonString.item_sold + '</strong></span>';
 
-      if (el) {
+      if (el && !item.querySelector('.sold-count')) {
         el.insertAdjacentHTML('beforeend', html);
       }
     });
