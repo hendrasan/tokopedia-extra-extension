@@ -1,6 +1,6 @@
 {
   "name": "Tokopedia Extra",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "This extension will give you extra features, such as showing total items sold when you browse/search for products in Tokopedia.",
   "icons": {
